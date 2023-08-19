@@ -1,0 +1,243 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafo: 'Open Sans', sans-serif;
+
+    --primario: #03f3f3e0;
+    --secundario: #5431d3;
+    --terciario: #353333dc;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*, *::before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+    font-size: 4rem
+}
+.header {
+    background-image: url(../img/tecnologia4.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--negro);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+.barra {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    color: var(--blanco);
+
+}
+.logo__nombre {
+    font-weight: 700;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--negro);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: var(--terciario) !important;
+}
+.boton--secundario {
+    background-color: var(--primario);
+}
+
+.Productos {
+    list-style: none;
+}
+
+.widget-Productos {
+    border-bottom: 1px solid var(--secundario);
+    margin-bottom: 2rem;
+}
+.widget-Productos:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-Productos__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-Productos__informacion {
+    font-weight: normal;
+}
+.widget-Productos__label,
+.widget-Produtos__info {
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--terciario);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.Productos {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--secundario);
+}
+@media (min-width: 768px) {
+    .Productos {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+.Productos:last-of-type {
+   border: none;
+}
+.Productos__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.Productos__info {
+    font-weight: normal;
+}
+.Produtos__label,
+.Productos__info {
+    font-size: 2rem;
+}
+.contacto-bg {
+    background-image: url(../img/tecnologia1.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.error {
+    background-color: rgb(185, 0, 0);
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+.correcto {
+    background-color: rgb(74, 185, 0);
+    padding: 1rem .5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+}
+.campo__field {
+    flex: 1;
+    border: 1px solid var(--secundario);
+}
+.campo__field--textarea {
+    height: 20rem;
+}
